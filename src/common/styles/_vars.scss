@@ -1,11 +1,13 @@
-$dark-color: #111111;
-$light-color: #dddddd;
+$transProp: background, border,  box-shadow;
+$transDuration: 0.3s, 0.5s, 0.3s;
+$timeFunc: ease-in-out; 
+$transCol: transparent;
+$textShadowSets: rgba(10, 6, 6, 0.5) 0px 3px 3px;
 
-$sm: 576px;
-$md: 768px;
-$lg: 992px;
-$xl: 1200px;
+$mainForestBack: linear-gradient(to bottom, white, rgb(185, 231, 197), rgb(60, 145, 78), rgb(27, 131, 58), rgb(185, 231, 197), white);
+$mainSkyBack: linear-gradient(to bottom, white, rgb(23, 33, 116), rgb(41, 54, 179), rgb(58, 21, 158), white);
+$mainSliderBack: linear-gradient(to right, black, rgb(24, 119, 44), rgb(53, 233, 68), black);
+$mainSliderSky: linear-gradient(to right, black, rgb(13, 22, 97), rgb(153, 152, 243), black);
 
-// LoginForm
-$valid-color: green;
-$invalid-color: red;
+$menuBackForest: linear-gradient(to bottom, black, rgb(8, 44, 22), rgb(11, 61, 40), #1a3f2c, rgb(44, 116, 68), rgb(231, 253, 236)); 
+$menuBackSky: linear-gradient(to bottom, black, rgb(11, 37, 22), rgb(16, 10, 53), rgb(39, 49, 102), rgb(235, 239, 253));

@@ -1,0 +1,52 @@
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    width: 98%;
+}
+
+.button {
+    margin: 0 10px;
+    width: 120px;
+    border-radius: 15px;
+    border: 3px double rgb(3, 61, 48);
+    padding: 10px;
+}
+
+.buttonForest {
+    @extend %button-sets;
+    
+    border: 3px double rgb(3, 61, 48);
+    border-radius: 15px;
+    background: rgb(182, 223, 117);
+    box-shadow: 0px 0px 10px black;
+    transition-property: $transProp;
+    transition-duration: $transDuration;
+    transition-timing-function: $timeFunc;
+
+    &:hover {
+        background: rgb(238, 116, 107);
+        border: 3px outset rgb(185, 14, 42);
+        box-shadow: 0px 2px 20px rgb(163, 158, 158);
+    }
+}
+
+.buttonSky {
+    @extend %button-sets;
+
+    border: 3px double rgb(2, 3, 78);
+    border-radius: 35px;
+    background: rgb(104, 104, 197);
+    transition-property: $transProp;
+    transition-duration: $transDuration;
+    transition-timing-function: $timeFunc;
+
+    &:hover {
+        background: rgb(195, 216, 247);
+        border: 3px outset rgb(6, 2, 20);
+        box-shadow: 0px 5px 15px rgb(56, 52, 52);
+    }
+}
+
+.runningButton {
+    background: radial-gradient( white, red);
+}

@@ -1,0 +1,27 @@
+.linkForest {
+    @extend %link-settings;
+    background-color: #d8f7e3;
+    text-shadow: rgba(7, 87, 43, 0.5) 0px 3px 3px;
+}
+  
+.linkSky {
+    @extend %link-settings;
+    background-color: #99a3fa;
+    text-shadow: rgba(36, 9, 145, 0.5) 0px 3px 3px;
+}
+  
+.linkForest:hover, .linkSky:hover {
+    background-clip: text;
+    color: transparent;
+}
+
+.linkForest:hover {
+    background-color: rgb(238, 116, 107);
+    text-shadow: rgba(10, 92, 67, 0.5)0px 3px 3px;
+}
+  
+.linkSky:hover {
+    background-color: rgb(219, 225, 250);
+    text-shadow: rgba(3, 106, 165, 0.5) 0px 3px 3px;
+}
+  

@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Cat",
+        "image": "https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y3V0ZSUyMGNhdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+        "price": "100$"
+    },
+    {
+        "id": 2,
+        "name": "Snake",
+        "image": "https://thumbs.dreamstime.com/b/%D0%B3%D0%BE%D0%BB%D1%83%D0%B1%D0%B0%D1%8F-%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%B0-%D1%81%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D1%8B-%D1%82%D0%B5%D1%80%D1%80%D0%BE%D1%80%D0%B8%D1%81%D1%82%D1%8B-%D0%B2%D0%B7%D0%BE%D1%80%D0%B2%D0%B0%D0%BB%D0%B8-%D0%B7%D0%BC%D0%B5%D0%B8-viper-insularis-trimeresurus-182873157.jpg",
+        "price": "700$"
+    },
+    {
+        "id": 3,
+        "name": "Dog",
+        "image": "https://www.washingtonpost.com/resizer/uwlkeOwC_3JqSUXeH8ZP81cHx3I=/arc-anglerfish-washpost-prod-washpost/public/HB4AT3D3IMI6TMPTWIZ74WAR54.jpg",
+        "price": "120$"
+    },
+    {
+        "id": 4,
+        "name": "Bears",
+        "image": "https://s.rfi.fr/media/display/787817c2-92f1-11eb-9a1b-005056bf87d6/w:1280/p:16x9/ab5949e11022d6c9b7aa4fbee7882e7b6bfbcc04.jpg",
+        "price": "5000$"
+    },
+    {
+        "id": 5,
+        "name": "Dinosaur",
+        "image": "https://www.jurassicworld.com/sites/default/files/2018-10/Indoraptor%20Mobile.jpg",
+        "price": "1000000000$"  
+    },
+    {
+        "id": 6,
+        "name": "Spider",
+        "image": "https://www.macaranga.org/wp-content/uploads/2019/07/Spider_Simoroxigorum-birupes_ChienLee_E-1-672x372.jpg",
+        "price": "300$"  
+    },
+    {
+        "id": 7,
+        "name": "Hedgehog",
+        "image": "https://images.immediate.co.uk/production/volatile/sites/23/2019/11/Michael-Milfeit-836536b.jpg?quality=90&resize=620%2C413",
+        "price": "200$"
+    }
+]

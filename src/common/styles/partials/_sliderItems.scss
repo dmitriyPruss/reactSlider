@@ -1,0 +1,84 @@
+.mainSliderItemForest {
+    @extend %mainSlider-sets;
+
+    border-radius: 10px;
+    background: $mainSliderBack;
+    box-shadow: 0px 32px 30px -20px black;
+
+    .mainImg {
+        @extend %mainImg-sets;
+        border-radius: 10px;
+    }
+
+    & > p {
+        @extend %name_price-sets;
+    }
+
+    @media screen and (max-width:500px) {
+        width: 370px;
+        height: 350px;
+
+        .mainImg {
+            width: 350px;
+            height: 250px;
+        }
+    }
+}
+
+.mainSliderItemSky {
+    @extend %mainSlider-sets;
+
+    border-radius: 62px;
+    background: $mainSliderSky;
+    box-shadow: 0px 37px 30px -15px black;
+
+    .mainImg {
+        @extend %mainImg-sets;
+        border-radius: 62px;
+    }
+
+    & > p {
+        @extend %name_price-sets;
+    }
+
+    @media screen and (max-width:500px) {
+        width: 370px;
+        height: 350px;
+
+        .mainImg {
+            width: 350px;
+            height: 250px;
+        }
+    }
+}
+
+.sliderItem {
+    width: 160px;
+    height: 120px;
+    @extend %flex-slider;
+
+    .commonImg {
+        object-fit: cover;
+        width: 158px;
+        height: 118px;
+        border-radius: 15px;
+        border-radius: 1px solid white;
+        opacity: 0.8;
+    }
+}
+
+
+.littleSliderItem {
+    width: 84px;
+    height: 64px;
+    @extend %flex-slider;
+    
+    .littleImg {
+        object-fit: cover;
+        width: 80px;
+        height: 60px;
+        border-radius: 15px;
+        opacity: 0.5;
+        border-radius: 1px solid white;
+    }
+}

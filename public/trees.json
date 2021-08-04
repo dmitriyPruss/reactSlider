@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Baobab",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/09/Baobab_and_elephant%2C_Tanzania.jpg",
+        "price": "1000$"
+    },
+    {
+        "id": 2,
+        "name": "Apple",
+        "image": "https://poland-ukraine.com.ua/wp-content/webpc-passthru.php?src=https://poland-ukraine.com.ua/wp-content/uploads/2018/09/sbor-yablok.jpeg&nocache=1",
+        "price": "50$"
+    },
+    {
+        "id": 3,
+        "name": "Sakura",
+        "image": "https://www.florastatic.net/floraexpress.ru/img/blog/710/23-05-16-floraexpress-02.jpg",
+        "price": "220$"
+    },
+    {
+        "id": 4,
+        "name": "Pineapple",
+        "image": "https://cdn.britannica.com/21/25921-050-5C41FA02/Pineapple-farm-Risaralda-departamento-Colombia.jpg",
+        "price": "150$"
+    },
+    {
+        "id": 5,
+        "name": "Oak",
+        "image": "https://mybackyardlife.com/wp-content/uploads/2020/10/IS-Oak-Tree.jpg",
+        "price": "100$"  
+    },
+    {
+        "id": 6,
+        "name": "Palm",
+        "image": "https://d39l2hkdp2esp1.cloudfront.net/img/photo/32485/32485_00_2x.jpg",
+        "price": "300$"  
+    },
+    {
+        "id": 7,
+        "name": "Grape",
+        "image": "https://i.pinimg.com/originals/b2/c3/76/b2c376a572acc4d1e81dffe555b7b635.jpg",
+        "price": "400$"
+    }
+]

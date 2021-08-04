@@ -1,0 +1,63 @@
+.settingsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+}
+
+.settings {
+    border: 5px double rgb(160, 2, 2);
+    border-radius: 10px;
+    width: 80%;
+    height: 50%;
+    padding: 15px;
+    background-color: #1a1414;
+    @extend %flex-sets;
+
+    .rangeValue {
+        width: 30%;
+        font-weight: 400;
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        word-spacing: 0.4rem;
+        background-color: #9b9595;
+        align-self: flex-end;
+        margin: -20px 10px 0 0;
+        background-clip: text;
+        color: $transCol;
+        text-shadow: $textShadowSets;
+    }
+}
+
+.settingElement {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+
+    & input, & select {
+        width: 200px;
+    }
+
+    & span {
+        width: 350px;
+        font-weight: 500;
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+        word-spacing: 0.5rem;
+        background-color: #8d8a8a;
+        background-clip: text;
+        color: $transCol;
+        text-shadow: $textShadowSets;
+    }
+
+    @media screen and (max-width:720px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        & span {
+            text-align: center;
+        }
+    }
+}
