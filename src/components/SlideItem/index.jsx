@@ -3,39 +3,72 @@ import MainSlide from './../MainSlide';
 import styles from './../Slides/Slides.module.scss';
 
 /**
- * 
- * @param {object} props 
+ *
+ * @param {object} props
  * @returns JSX.Element || null
  */
-function SlideItem(props) {
+function SlideItem (props) {
+  const {
+    index,
+    slide: { image, id },
+    info: { currentSlides },
+  } = props;
 
-    const { index, slide: {image, }, } = props;
-
-    switch(index) {
-        case 0:
-        case 4:
-            return (
-                <li className={styles.littleSliderItem}>
-                    <img
-                    className={styles.littleImg} src={image} alt={`Img ${index+1}`} />
-                </li>
-            );
-            break;
-        case 1:
-        case 3:
-            return (
-                <li className={styles.sliderItem}>
-                    <img 
-                    className={styles.commonImg} src={image} alt={`Img ${index+1}`} />
-                </li>
-            );
-            break;
-        case 2:
-            return <MainSlide {...props} />;
-            break;
-        default:
-            return null;         
-    }
+  switch (index) {
+    case currentSlides[0]:
+    case currentSlides[4]:
+      if (id === -1 || id === 0 || id === 11 || id === 12) {
+        return (
+          <li style={{ opacity: 0 }} className={styles.littleSliderItem}>
+            <img
+              className={styles.littleImg}
+              src={image}
+              alt={`Img ${index + 1}`}
+            />
+          </li>
+        );
+      } else {
+        return (
+          <li className={styles.littleSliderItem}>
+            <img
+              className={styles.littleImg}
+              src={image}
+              alt={`Img ${index + 1}`}
+            />
+          </li>
+        );
+      }
+      break;
+    case currentSlides[1]:
+    case currentSlides[3]:
+      if (id === 0 || id === 11) {
+        return (
+          <li style={{ opacity: 0 }} className={styles.sliderItem}>
+            <img
+              className={styles.commonImg}
+              src={image}
+              alt={`Img ${index + 1}`}
+            />
+          </li>
+        );
+      } else {
+        return (
+          <li className={styles.sliderItem}>
+            <img
+              className={styles.commonImg}
+              src={image}
+              alt={`Img ${index + 1}`}
+            />
+          </li>
+        );
+      }
+      break;
+    case currentSlides[2]:
+      return <MainSlide {...props} />;
+      break;
+    default:
+      return null;
+  }
 }
 
-export default SlideItem
+export default SlideItem;
