@@ -118,8 +118,6 @@ class Slides extends Component {
           showPrevSlide={this.showPrevSlide}
           slideCarousel={this.slideCarousel}
           rangeValue={this.props.rangeValue}
-          timer={this.timer}
-          self={this}
           props={this.state}
         />
       </div>

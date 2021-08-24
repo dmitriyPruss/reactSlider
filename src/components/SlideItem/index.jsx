@@ -19,7 +19,7 @@ function SlideItem (props) {
     case currentSlides[4]:
       if (id === -1 || id === 0 || id === 11 || id === 12) {
         return (
-          <li style={{ opacity: 0 }} className={styles.littleSliderItem}>
+          <li style={{ opacity: 0.01 }} className={styles.littleSliderItem}>
             <img
               className={styles.littleImg}
               src={image}
@@ -43,7 +43,7 @@ function SlideItem (props) {
     case currentSlides[3]:
       if (id === 0 || id === 11) {
         return (
-          <li style={{ opacity: 0 }} className={styles.sliderItem}>
+          <li style={{ opacity: 0.02 }} className={styles.sliderItem}>
             <img
               className={styles.commonImg}
               src={image}

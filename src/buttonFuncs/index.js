@@ -7,7 +7,7 @@ export function showNext () {
   if (slides.length - 1 > currentSlides[currentSlides.length - 1]) {
     this.stopCarousel();
 
-    const newCurrentSlides = [...this.state.currentSlides];
+    const newCurrentSlides = [...currentSlides];
     for (let i = 0; i < newCurrentSlides.length; i++) {
       newCurrentSlides[i]++;
     }
@@ -57,14 +57,12 @@ export function runCarousel () {
   goingPromise.then(() => {
     const { isGoing, timer } = this.state;
 
-    console.log('isGoing :>> ', isGoing);
-
     isGoing
       ? this.setState({
           timer: setInterval(() => {
             const { currentSlides, slides } = this.state;
             if (slides.length - 1 > currentSlides[currentSlides.length - 1]) {
-              const newCurrentSlides = [...this.state.currentSlides];
+              const newCurrentSlides = [...currentSlides];
               for (let i = 0; i < newCurrentSlides.length; i++) {
                 newCurrentSlides[i]++;
               }

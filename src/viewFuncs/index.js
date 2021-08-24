@@ -1,3 +1,5 @@
+import constants from '../constants';
+
 /**
  *
  * @param {string} name
@@ -24,11 +26,10 @@ export function strRender (obj) {
   this.setState({
     mainName: '',
     mainPrice: '',
-    mainImage:
-      'https://static.vecteezy.com/system/resources/previews/001/826/248/non_2x/progress-loading-bar-buffering-download-upload-and-loading-icon-vector.jpg',
+    mainImage: constants.MAIN_IMAGE,
   });
 
-  const timeout = 100;
+  const timeout = constants.DEFAULT_TIMEOUT;
   const showImg = showMainItem.bind(this, 'mainImage', image, timeout);
   const showName = showMainItem.bind(this, 'mainName', name, timeout / 2);
   const showPrice = showMainItem.bind(this, 'mainPrice', price, timeout / 2);
