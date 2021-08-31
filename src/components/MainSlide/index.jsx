@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { withTheme } from './../HOCs';
-import { strRender } from '../../viewFuncs';
+import constants from '../../constants';
+import { showMainItem } from '../../viewFuncs';
 import styles from './../Slides/Slides.module.scss';
 
 class MainSlide extends Component {
@@ -17,6 +18,40 @@ class MainSlide extends Component {
 
   /**
    *
+   * @param {object} obj
+   */
+  strRender (obj) {
+    const { name, price, image } = obj;
+
+    this.setState({
+      mainName: '',
+      mainPrice: '',
+      mainImage: constants.MAIN_IMAGE,
+    });
+
+    const timeout = constants.DEFAULT_TIMEOUT;
+    const showImg = showMainItem.bind(this, 'mainImage', image, timeout);
+    const showName = showMainItem.bind(this, 'mainName', name, timeout / 2);
+    const showPrice = showMainItem.bind(this, 'mainPrice', price, timeout / 2);
+
+    const strPromise = async () => {
+      const res = await showImg();
+      return res;
+    };
+
+    strPromise()
+      .then(async result => {
+        const { mainName } = this.state;
+        const res = await showName();
+      })
+      .then(async result => {
+        const { mainPrice } = this.state;
+        const res = await showPrice();
+      });
+  }
+
+  /**
+   *
    * @param {import('react').BaseSyntheticEvent} e - SyntheticBaseEvent
    */
   makeFullscreen = e => {
@@ -29,7 +64,7 @@ class MainSlide extends Component {
   };
 
   componentDidMount () {
-    strRender.call(this, this.props.slide);
+    this.strRender(this.props.slide);
   }
 
   /**
@@ -39,7 +74,7 @@ class MainSlide extends Component {
    */
   componentDidUpdate (prevProps, prevState) {
     if (this.props.slide.name !== prevProps.slide.name) {
-      strRender.call(this, this.props.slide);
+      this.strRender(this.props.slide);
     }
   }
 
